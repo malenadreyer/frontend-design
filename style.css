@@ -32,7 +32,20 @@
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
+    .card:not(:has(img)) .content:not(:has(h3)) {
+        font-size:1.25rem;
+        line-height: 1.4;
+    }
+    .card:not(:has(img)) .content:has(h3) h3 {
+        font-size: 1.6rem;
+    }
 
+    /* Kan ikke finde ud af at få billedet til at fylde, men kan godt fange den */
+    .card:has(img) {
+        width: 110%;
+        height: 100%;
+        object-fit: cover; 
+    }
     .card {
         background: #fff;
         border-radius: 6px;
@@ -61,7 +74,6 @@
         block-size: auto;
         display: block;
     }
-
     html {
         font-family: system-ui;
         background: #CFD8E4;
