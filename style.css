@@ -1,7 +1,7 @@
 .card {
     padding: 1rem;
 
-    .content>*+* {
+    .content {
         margin-top: .25rlh;
     }
 }
