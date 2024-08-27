@@ -1,2 +1,15 @@
 /* Dine styles her */
-article {}
+article * + *{
+  margin-block-start: var(--flow-space, .5rlh);
+}
+:is(h2) {
+--flow-space: 2rlh;
+}
+
+:is(h3) {
+--flow-space: 1rlh;
+}
+
+:is(h3) + *  {
+  --flow-space: .25rlh; 
+}
