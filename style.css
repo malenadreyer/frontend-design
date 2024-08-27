@@ -29,7 +29,7 @@ article {
   line-height: 1.7;
   }
 
- article img {
+ article * + img{
   display: block;
   object-fit: fill;
   max-width: none;
