@@ -72,7 +72,14 @@ section {
         background: var(--gray-100);
         padding: .4rlh .6rlh;
     }
-
+    @media (width < 600px) {
+        grid: revert;
+    
+        .content,
+        figure {
+          display: revert;
+          grid-area: revert;
+        }
  
 }
 
