@@ -32,8 +32,8 @@
          }
          :is(.tag) {
             grid-column: 1;
-    
-       
+            width: fit-content;
+
             
          }
       
